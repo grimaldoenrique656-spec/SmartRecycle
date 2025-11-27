@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRecycle</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .blur-circle {
+            filter: blur(80px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-teal-50 overflow-hidden">
+
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-400 rounded-full blur-circle"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-teal-400 rounded-full blur-circle"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto text-center px-6 py-20">
+        
+        <div data-aos="fade-up" class="relative flex justify-center mb-8">
+            <i data-lucide="recycle" class="w-24 h-24 text-emerald-600"></i>
+            <i data-lucide="leaf" class="w-12 h-12 text-teal-600 absolute -bottom-2 -right-2"></i>
+        </div>
+
+        <h1 data-aos="fade-up" data-aos-delay="200"
+            class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+            SmartRecycle
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="300"
+           class="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
+            Transformando botellas plásticas en un futuro sostenible
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="400"
+           class="text-lg text-gray-500 mb-12">
+            Matehuala, San Luis Potosí
+        </p>
+
+        <a href="#sobre">
+            <button data-aos="zoom-in" data-aos-delay="500"
+                class="px-10 py-4 bg-emerald-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-emerald-700 transition">
+                Conoce más
+            </button>
+        </a>
+    </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="sobre" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 data-aos="fade-up" class="text-5xl font-bold mb-6 text-gray-900">Sobre Nosotros</h2>
+
+        <p data-aos="fade-up" data-aos-delay="200" class="text-gray-600 text-lg max-w-3xl mx-auto mb-16">
+            SmartRecycle nace para reducir la contaminación por botellas plásticas en nuestra región.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div data-aos="fade-up" class="card bg-gray-50 p-8 rounded-2xl shadow">
+                <h3 class="text-2xl font-bold mb-4">Nuestra Misión</h3>
+                <p class="text-gray-600">Reducir la contaminación mediante soluciones innovadoras y sostenibles.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="150" class="card bg-gray-50 p-8 rounded-2xl shadow">
+                <h3 class="text-2xl font-bold mb-4">Nuestra Comunidad</h3>
+                <p class="text-gray-600">Colaboramos con ciudadanos, empresas y gobierno para crear un impacto real.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="card bg-gray-50 p-8 rounded-2xl shadow">
+                <h3 class="text-2xl font-bold mb-4">Nuestro Objetivo</h3>
+                <p class="text-gray-600">Reducir significativamente los residuos plásticos en Matehuala.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="funciona" class="py-24 bg-gradient-to-br from-gray-50 to-emerald-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-5xl font-bold text-gray-900 mb-4">Cómo Funciona</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Un proceso simple y efectivo para transformar residuos en recursos valiosos.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Paso 1 -->
+            <div data-aos="fade-up">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card">
+                    <div class="absolute -mt-4 ml-[-16px] w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                        01
+                    </div>
+
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6 mt-4">
+                        <i data-lucide="trash-2" class="w-8 h-8 text-emerald-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Recolección</h3>
+                    <p class="text-gray-600">Los ciudadanos depositan botellas en puntos de recolección.</p>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div data-aos="fade-up" data-aos-delay="150">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card">
+                    <div class="absolute -mt-4 ml-[-16px] w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                        02
+                    </div>
+
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6 mt-4">
+                        <i data-lucide="refresh-cw" class="w-8 h-8 text-emerald-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Centro de Acopio</h3>
+                    <p class="text-gray-600">Las botellas se clasifican cuidadosamente.</p>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card">
+                    <div class="absolute -mt-4 ml-[-16px] w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                        03
+                    </div>
+
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6 mt-4">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-emerald-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Procesamiento</h3>
+                    <p class="text-gray-600">El material se transforma en productos nuevos.</p>
+                </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div data-aos="fade-up" data-aos-delay="450">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card">
+                    <div class="absolute -mt-4 ml-[-16px] w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                        04
+                    </div>
+
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6 mt-4">
+                        <i data-lucide="award" class="w-8 h-8 text-emerald-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Impacto</h3>
+                    <p class="text-gray-600">Cada botella reciclada ayuda al planeta.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- IMPACTO AMBIENTAL -->
+<section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 data-aos="fade-up" class="text-5xl font-bold text-gray-900 mb-6">Impacto Ambiental</h2>
+
+        <p data-aos="fade-up" data-aos-delay="150"
+           class="text-gray-600 text-lg max-w-3xl mx-auto mb-16">
+            Cada acción cuenta. Juntos estamos creando un impacto real en nuestro medio ambiente.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+            <div data-aos="fade-up" class="impact-card bg-emerald-100 p-8 rounded-2xl shadow-lg">
+                <h3 class="text-4xl font-bold text-emerald-700">85%</h3>
+                <p class="text-gray-700 mt-2">Reducción de residuos</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="150" class="impact-card bg-teal-100 p-8 rounded-2xl shadow-lg">
+                <h3 class="text-4xl font-bold text-teal-700">50K</h3>
+                <p class="text-gray-700 mt-2">Litros de agua ahorrados</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="impact-card bg-emerald-100 p-8 rounded-2xl shadow-lg">
+                <h3 class="text-4xl font-bold text-emerald-700">200+</h3>
+                <p class="text-gray-700 mt-2">Árboles equivalentes salvados</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="450" class="impact-card bg-teal-100 p-8 rounded-2xl shadow-lg">
+                <h3 class="text-4xl font-bold text-teal-700">1M+</h3>
+                <p class="text-gray-700 mt-2">Botellas recicladas</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ÚNETE AL CAMBIO -->
+<section class="py-24 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
+    <h2 data-aos="fade-up" class="text-5xl font-bold mb-6">Únete al Cambio</h2>
+    <p data-aos="fade-up" data-aos-delay="200"
+       class="text-lg max-w-3xl mx-auto">
+        Cada botella que reciclas es un paso hacia un planeta más limpio. Sé parte de la solución.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="py-16 bg-gray-900 text-gray-300">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-white mb-4">SmartRecycle</h2>
+        <p class="mb-8">Transformando botellas plásticas en un futuro sostenible para Matehuala.</p>
+
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Contacto</h3>
+                <p>Ignacio Montes de Oca # 602, 78796 Matehuala, San Luis Potosí</p>
+                <p>cbtis151@gmail.com</p>
+                <p>488 882 5650</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Horarios</h3>
+                <p>Lunes a Viernes</p>
+                <p>8:00 AM - 3:00 PM</p>
+            </div>
+
+        </div>
+
+        <p class="copy text-center mt-12 text-gray-500">© 2024 SmartRecycle. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Init Animations -->
+<script>
+    AOS.init();
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
